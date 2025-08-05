@@ -2,36 +2,35 @@
 
 A basic Multi-Client Protocol (MCP) server that performs arithmetic operations such as addition, subtraction, multiplication, and division.
 
-> ⚡ Built in Python using [`uv`](https://github.com/astral-sh/uv) (a fast modern Python package manager).  
-> 🧪 Tested locally using **Claude Desktop** for interaction and verification.
+> ⚡ Built using Python and managed with [`uv`](https://github.com/astral-sh/uv)  
+> 🧪 Tested using **Claude Desktop** as a client interface
 
 ---
 
 ## 🚀 Features
 
-- Accepts requests from multiple clients (MCP-style interaction).
-- Supports the following operations:
-  - Addition
-  - Subtraction
-  - Multiplication
-  - Division
-- Supports both interactive/local testing (Claude Desktop) and CLI/API-based communication.
-- Fast environment setup with `uv`.
+- Multi-client interaction support
+- CLI-based setup and execution via `mcp[cli]`
+- Handles core arithmetic operations: `add`, `subtract`, `multiply`, `divide`
+- Fast project setup using `uv`
 
 ---
 
 ## 🛠️ Tech Stack
 
 - Python 3.8+
-- `uv` – modern Python package manager
-- Your choice of backend logic (e.g., socket server, FastAPI, etc.)
-- Claude Desktop – for testing and simulation of client/server communication
+- [`uv`](https://github.com/astral-sh/uv) – modern Python package manager
+- `mcp[cli]` – arithmetic operation + CLI tooling
+- Claude Desktop – for local testing
 
 ---
 
-## 📦 Installation
+## 📦 Project Setup
 
-### Step 1: Install `uv` (if not already installed)
+### 1. Initialize a new project using `uv`
 
 ```bash
-curl -Ls https://astral.sh/uv/install.sh | sh
+uv init mcp-server-demo
+cd mcp-server-demo
+
+
