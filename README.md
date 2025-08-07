@@ -1,6 +1,6 @@
 # 🧮 MCP Arithmetic Server
 
-A basic Multi-Client Protocol (MCP) server that performs arithmetic operations such as addition, subtraction, multiplication, and division.
+A basic Model-Client Protocol (MCP) server that performs arithmetic operations such as addition, subtraction, multiplication, and division.
 
 > ⚡ Built using Python and managed with [`uv`](https://github.com/astral-sh/uv)  
 > 🧪 Tested using **Claude Desktop** as a client interface
@@ -32,5 +32,6 @@ A basic Multi-Client Protocol (MCP) server that performs arithmetic operations s
 ```bash
 uv init mcp-server-demo
 cd mcp-server-demo
+
 
 
